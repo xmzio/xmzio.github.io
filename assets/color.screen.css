@@ -1,0 +1,37 @@
+body {
+	color: #604848;
+	background-color: #F0F0D8;
+}
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	color: #A0C55F;
+}
+h1 a:hover, h2 a:hover {
+	border-bottom-color: #A0C55F;
+}
+a {
+	color: #789048;
+}
+#header, #content, #footer {
+	background-color: white;
+}
+@media screen and (max-width: 799px) {
+	#aside {
+		background-color: white;
+	}
+}
+#title {
+	background-color: #789048;
+}
+#title .tld {
+	color: white;
+}
+#title a {
+	color: white;
+}
+
+#subscribe li a {
+	color: white;
+}
+#subscribe li {
+	background-color: #604848;
+}

@@ -3,11 +3,11 @@ layout: default
 title: About
 ---
 
-I'm Xavier Mu&ntilde;iz, and I'm a software developer in Dallas, Texas.
+My name is Xavier Mu&ntilde;iz, and I'm a software developer in Dallas, Texas.
 
-I work at [Base22](http://base22.com) as a Solution Architect. Base22 is the best enterprise web design and development agency, and I'm very proud of being part of this team.
+I work as a Solution Architect at [Base22](http://base22.com). Base22 is the best enterprise web design and development agency, and I'm very proud I'm part of this awesome team.
 
-After work I'm still on my computer, and I like to program small apps for the iPhone and the iPad.
+I'm still on my computer after work, and I like to program small apps for the iPhone and the iPad.
 
 
 Contact

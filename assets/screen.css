@@ -1,0 +1,236 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+
+
+/* Style */
+
+body {
+	font-family: Heuristica, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+h1 {
+	line-height: 1.2;
+}
+h2, h3, h4, h5, h6, p, li, blockquote {
+	line-height: 1.6;
+}
+
+
+h1 {
+	font-size: 52px;
+}
+h2 {
+	font-size: 25px;
+}
+h3, h4, h5, h6, p, li, blockquote {
+	font-size: 20px;
+}
+
+
+h3, h4, h5, h6 {
+	font-weight: bold;
+}
+blockquote {
+	font-style: italic;
+	margin: 10px 20px 10px 40px;
+}
+
+h1, h2 {
+	padding: 20px 0 10px 0;
+}
+h3, h4, h5, h6, p, p ~ ul, p ~ ol {
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+ul, ol {
+	padding-left: 26px;
+}
+li {
+	list-style-position: outside;
+}
+ul > li {
+	list-style-type: disc;
+}
+ul > li > ul > li {
+	list-style-type: square;
+}
+ul > li > ul > li > ul > li {
+	list-style-type: circle;
+}
+
+h1 a, h2 a {
+	text-decoration: none;
+}
+h1 a:hover, h2 a:hover {
+	border-bottom-style: dotted;
+	border-bottom-width: 3px;
+}
+
+#title {
+	font-size: 55px;
+	text-transform: lowercase;
+}
+#title .tld {
+	font-size: 26px;
+}
+#title a {
+	text-decoration: none;
+}
+
+#home h1, #subscribe h2 {
+	display: none;
+}
+
+#subscribe ul {
+	padding: 0px;
+}
+#subscribe ul li {
+	list-style-type: none;
+	padding: 0 8px;
+	margin: 8px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+#subscribe ul li a {
+	font-size: 16px;
+	text-decoration: none;
+}
+.icon-twitter, .icon-feed {
+	font-size: 14px;
+}
+
+
+#home .post {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.post + .post:before {
+	content: "\00A7";
+}
+.meta {
+	font-size: 14px;
+}
+.smallprint {
+	font-size: 12px;
+}
+
+
+
+
+
+/* Layout */
+#container {
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 320px;
+	max-width: 800px;
+	width: 100%;
+}
+#header, #content, #footer {
+	clear: left;
+	float: left;
+	min-width: 288px;
+	max-width: 568px;
+	width: 100%;
+	display: inline;
+}
+#header, #content {
+	padding: 0 16px;
+}
+#footer {
+	padding: 30px 16px 30px 16px;
+}
+#title {
+	clear: left;
+	float: left;
+	padding: 20px 6px 2px 8px;
+	margin-bottom: 15px;
+	display: inline;
+}
+#aside {
+	float: left;
+	min-width: 200px;
+	display: inline;
+}
+@media screen and (max-width: 799px) {
+	#aside {
+		padding: 30px 16px;
+		min-width: 288px;
+		max-width: 568px;
+		width: 100%;
+	}
+	#subscribe ul li {
+		display: inline;
+	}
+}
+#bottom {
+	clear: both;
+}
+
+
+
+
+
+/* Icons */
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.icon-twitter:before {
+	content: "\e600";
+}
+.icon-feed:before {
+	content: "\e601";
+}
+.icon-github:before {
+	content: "\e602";
+}
+
+
+/* Web fonts */
+
+@font-face {
+	font-family: 'Heuristica';
+	src:url('Heuristica-Regular.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Heuristica';
+	src:url('Heuristica-Italic.otf');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Heuristica';
+	src:url('Heuristica-Bold.otf');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Heuristica';
+	src:url('Heuristica-BoldItalic.otf');
+	font-weight: bold;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'icomoon';
+	src:url('icomoon.eot?-gfi7yc');
+	src:url('icomoon.eot?#iefix-gfi7yc') format('embedded-opentype'),
+		url('icomoon.woff?-gfi7yc') format('woff'),
+		url('icomoon.ttf?-gfi7yc') format('truetype'),
+		url('icomoon.svg?-gfi7yc#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

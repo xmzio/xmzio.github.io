@@ -10,15 +10,33 @@
 		<link href="/feed" rel="alternate" title="xmz.io" type="application/atom+xml" />
 
 		<!-- Main CSS -->
-		<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+		<link rel="stylesheet" href="{{ site.url }}/assets/screen.css" type="text/css" media="screen, projection" />
+		<link rel="stylesheet" href="{{ site.url }}/assets/color.screen.css" type="text/css" media="screen, projection" />
+		
+		<style>
+
+		</style>
 	</head>
 	<body>
-		<div class="site">
-			{% include header.html %}
+		<div id="container">
+				
+			<div id="header">
+				{% include header.html %}
+			</div><!-- /header -->
+				
+			<div id="content">
+				{{ content }}
+			</div><!-- /content -->
 
-			{{ content }}
+			<div id="aside">
+				{% include aside.html %}
+			</div><!-- /aside -->
+
+			<div id="footer">
+				{% include footer.html %}
+			</div><!-- /footer -->
 			
-			{% include footer.html %}
+			<div id="bottom"></div>
 		</div>
 	</body>
 </html>

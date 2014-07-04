@@ -1,0 +1,11 @@
+<div class="post">
+	<h2><a href="{{ post.url }}">{{ post.title }}</a></h1>
+	
+	<div class="meta">
+		{{ post.date | date_to_string }}
+	</div>
+	
+	{{ post.excerpt }}
+	
+	<a href="{{ post.url }}">Read this article...</a>
+</div>
