@@ -60,6 +60,13 @@ ul > li > ul > li > ul > li {
 	list-style-type: circle;
 }
 
+ol > li {
+	list-style-type: decimal;
+}
+ol > li > ol > li {
+	list-style-type: lower-alpha;
+}
+
 h1 a, h2 a {
 	text-decoration: none;
 }
@@ -117,7 +124,12 @@ h1 a:hover, h2 a:hover {
 	font-size: 12px;
 }
 
-
+pre {
+    padding: 5px;
+    overflow-x: auto;
+    font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+    font-size: 12px;
+}
 
 
 
