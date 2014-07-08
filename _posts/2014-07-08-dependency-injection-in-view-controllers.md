@@ -17,7 +17,7 @@ Brent Simmons from Q-Branch has been blogging his progress on Vesper for Mac, an
 This is how I have accomplished it:
 
 First create a protocol specifying properties for the objects you want to pass around:
-{% highlight Swift %}
+{% highlight JavaScript %}
 import CoreData
 
 @objc protocol ViewControllerWithContext {
@@ -26,7 +26,7 @@ import CoreData
 {% endhighlight %}
 
 And make your view controllers conform to the new protocol:
-{% highlight Swift %}
+{% highlight JavaScript %}
 import UIKit
 import CoreData
 
@@ -45,7 +45,7 @@ Note the _@objc_ attribute in the protocol declaration. The Swift Programming La
 
 Now you can inject the object (the *context* property, in this case) when preparing the segue:
 
-{% highlight Swift %}
+{% highlight JavaScript %}
 override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!)  {
 
     if let destinationViewController = segue?.destinationViewController as? ViewControllerWithContext {
@@ -64,7 +64,7 @@ Here I added an extra type checking, because sometimes I swap my initial view co
 I would probably remove the type checking block before shipping the app.
 
 
-{% highlight Swift %}
+{% highlight JavaScript %}
 func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
 
     var candidateViewControllerWithContext: ViewControllerWithContext?
