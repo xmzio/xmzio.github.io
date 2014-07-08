@@ -35,3 +35,10 @@ a {
 #subscribe li {
 	background-color: #604848;
 }
+pre {
+    background: #333333;
+    color: #FFF;
+}
+.highlight {
+	background: #333333;
+}
