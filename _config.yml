@@ -1,3 +1,5 @@
 name: xmz.io
 description: Xavier Muniz's website
 url: http://xmz.io
+markdown: kramdown
+permalink: /:year/:title
