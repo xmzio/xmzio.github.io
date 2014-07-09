@@ -36,6 +36,17 @@ blockquote {
 	font-style: italic;
 	margin: 10px 20px 10px 40px;
 }
+p code {
+	padding: 4px 10px;
+}
+code, pre {
+    font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+    font-size: 16px;
+}
+pre {
+    padding: 5px;
+    overflow-x: auto;
+}
 
 h1, h2 {
 	padding: 20px 0 10px 0;
@@ -120,15 +131,19 @@ h1 a:hover, h2 a:hover {
 .meta {
 	font-size: 14px;
 }
-.smallprint {
-	font-size: 12px;
+
+.feedback {
+	margin-top: 25px;
+	margin-bottom: 40px;
+	font-size: 16px;
+	font-style: italic;
+}
+.feedback a {
+	text-decoration: none;
 }
 
-pre {
-    padding: 5px;
-    overflow-x: auto;
-    font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
-    font-size: 12px;
+.smallprint {
+	font-size: 12px;
 }
 
 
@@ -138,14 +153,14 @@ pre {
 	margin-left: auto;
 	margin-right: auto;
 	min-width: 320px;
-	max-width: 800px;
+	max-width: 900px;
 	width: 100%;
 }
 #header, #content, #footer {
 	clear: left;
 	float: left;
 	min-width: 288px;
-	max-width: 568px;
+	max-width: 698px;
 	width: 100%;
 	display: inline;
 }
@@ -164,7 +179,7 @@ pre {
 }
 #aside {
 	float: left;
-	min-width: 200px;
+	min-width: 170px;
 	display: inline;
 }
 @media screen and (max-width: 799px) {

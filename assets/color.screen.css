@@ -35,6 +35,9 @@ a {
 #subscribe li {
 	background-color: #604848;
 }
+p code {
+	background-color: #f0f0d8;
+}
 pre {
     background: #333333;
     color: #FFF;
