@@ -10,6 +10,9 @@ body {
 	font-family: Heuristica, "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
 h1 {
 	line-height: 1.2;
 }
@@ -84,6 +87,24 @@ h1 a, h2 a {
 h1 a:hover, h2 a:hover {
 	border-bottom-style: dotted;
 	border-bottom-width: 3px;
+}
+table, th, td {
+	border-width: 1px;
+	border-style: solid;
+}
+td {
+	padding: 15px;
+}
+
+img.float-left {
+	margin: 0 20px 10px 0;
+	float: left;
+	clear: both;
+}
+img.float-right {
+	margin: 0 0 10px 20px;
+	float: right;
+	clear: both;
 }
 
 #title {

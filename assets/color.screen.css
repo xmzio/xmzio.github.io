@@ -11,6 +11,9 @@ h1 a:hover, h2 a:hover {
 a {
 	color: #789048;
 }
+table, th, td {
+	border-color: #604848;
+}
 #header, #content, #footer {
 	background-color: white;
 }
@@ -35,7 +38,7 @@ a {
 #subscribe li {
 	background-color: #604848;
 }
-p code {
+p code, li code {
 	background-color: #f0f0d8;
 }
 pre {
