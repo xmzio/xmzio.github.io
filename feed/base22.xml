@@ -12,7 +12,7 @@ layout: none
 			<item>
 				<title>{{ post.title | xml_escape }}</title>
 				<description><![CDATA[<p>{{ post.excerpt | cdata_escape }}</p>]]></description>
-				<content:encoded><![CDATA[<p>{{ post.content | cdata_escape }}</p>]]></content:encoded>
+				<content:encoded>{{ post.content | xml_escape }}</content:encoded>
 				<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
 				<link>{{ site.url }}{{ post.url }}</link>
 				<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
